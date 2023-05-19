@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            font-family:'Open Sans',sans-serif;
+             /* background-image: linear-gradient(to right, rgba(126, 178, 210, 0.1), rgba(214, 81, 150, 0.5)); */
+             background-color:rgb(188, 228, 224);
+        }
+        header{
+            height:100px;
+            /* background:gray; */
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+
+        }
+        ul{
+            display:flex;
+            list-style-type:none;
+            align-items:center;
+        }
+        ul li a{
+            padding-left:20px;
+            text-decoration:none;
+            color:#3a3a3a;
+            display:inline-block;
+            font-weight:800;
+        }
+        li a::after{
+            content:'';
+            display:block;
+            height:4px;
+            width:0;
+            background:#c4c4f7;
+            transition:all.5s;
+        }
+        li a:hover::after{
+            width:100%
+        }
+        main{
+            display:flex;
+            /* border:1px solid red; */
+            height:calc(100vh - 100px);
+            align-items:center;
+            justify-content:center;
+
+
+        }
+        .com-img{
+            max-width:670px;
+            height:500px;
+            margin-left:50px;
+        }
+        .content-left{
+            width:30%;
+
+        }
+        main h1{
+            font-size:54px;
+            color:#224f66;
+            text-transform:upper-case;
+        }
+        main p{
+            font-size:14px;
+            font-weight:400;
+            color:#333;
+            line-height:31.5px;
+            margin:30px 0;
+        }
+        .cta{
+            padding:15px 30px;
+            background-color:#c4c4f7;
+            color:white;
+            outline:none;
+            border:none;
+            font-weight:800;
+            text-transform:upper-case;
+            border-radius:50px;
+            cursor:pointer;
+        }
+        .signup-btn{
+            padding:10px 20px;
+            margin-left:20px;
+            background-color:#c4c4f7;
+            color:white;
+            outline:none;
+            border:none;
+            font-weight:700;
+            text-transform:upper-case;
+            border-radius:50px;
+            cursor:pointer;
+        }
+        @media only screen and (min-width:500px){
+            body{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div class="logo">
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2017/09/logo-design-software.png" alt="Logo" width="130px" height="60px">
+       </div>
+       <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#" class="signup-btn">Sign Up</a></li>
+        </ul>
+       </nav>
+    </header>
+    <main>
+<div class="content-left">
+    <h1>Marketing</h1>
+    <p style="font-weight:600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus veritatis ullam ea vel nulla dignissimos aspernatur perspiciatis officia, hic, voluptate, blanditiis quas? Laboriosam cupiditate suscipit nulla vel nemo temporibus, doloribus consequuntur voluptas labore quia, culpa rem commodi consectetur? Facere obcaecati tempora officiis aliquam? Voluptatum totam, alias nam magnam voluptate autem.</p>
+    <button class="cta">Learn More</button>
+</div>
+<div class="content-right">
+    <img src="https://images.businessnewsdaily.com/app/uploads/2022/04/04081906/build-your-pages.png" alt="company" class="com-img" width="100%" height="500px">
+</div>
+    </main>
+</body>
+</html>
